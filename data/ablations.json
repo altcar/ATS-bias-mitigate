@@ -1,0 +1,105 @@
+{
+  "baseline": {
+    "gap_pp": -8.83008098602295,
+    "shortlist_gap_pp": -12.5,
+    "mean_score": 0.18895979225635529
+  },
+  "features": {
+    "name": {
+      "gap_pp": -5.078166961669922,
+      "shortlist_gap_pp": -18.75,
+      "gap_removed_pp": -3.7519140243530273,
+      "gap_removed_pct": 42.490142845709975,
+      "mean_score_change_pp": -11.612115859985352,
+      "auc": 0.7330540971034158
+    },
+    "pronouns": {
+      "gap_pp": -6.109385013580322,
+      "shortlist_gap_pp": -8.75,
+      "gap_removed_pp": -2.720695972442627,
+      "gap_removed_pct": 30.811676322665566,
+      "mean_score_change_pp": 6.064154148101807,
+      "auc": 0.7433779718010736
+    },
+    "affiliation": {
+      "gap_pp": -8.400919914245605,
+      "shortlist_gap_pp": -13.749999999999998,
+      "gap_removed_pp": -0.42916107177734375,
+      "gap_removed_pct": 4.860216712130486,
+      "mean_score_change_pp": 10.28322982788086,
+      "auc": 0.7442038817768865
+    },
+    "career-gap reason": {
+      "gap_pp": -9.136215209960938,
+      "shortlist_gap_pp": -15.000000000000002,
+      "gap_removed_pp": 0.3061342239379883,
+      "gap_removed_pct": -3.4669469557817787,
+      "mean_score_change_pp": 1.5344947576522827,
+      "auc": 0.7419031325585512
+    },
+    "skills match": {
+      "gap_pp": -6.197402477264404,
+      "shortlist_gap_pp": -16.25,
+      "gap_removed_pp": -2.632678508758545,
+      "gap_removed_pct": 29.814885196701894,
+      "mean_score_change_pp": -6.705110549926758,
+      "auc": 0.6376025013273553
+    },
+    "years experience": {
+      "gap_pp": -7.780270099639893,
+      "shortlist_gap_pp": -17.5,
+      "gap_removed_pp": -1.0498108863830566,
+      "gap_removed_pct": 11.889028968644707,
+      "mean_score_change_pp": -3.320030927658081,
+      "auc": 0.7288065600849508
+    },
+    "education": {
+      "gap_pp": -9.379280090332031,
+      "shortlist_gap_pp": -13.749999999999998,
+      "gap_removed_pp": 0.549199104309082,
+      "gap_removed_pct": -6.219638360943733,
+      "mean_score_change_pp": -1.1607199907302856,
+      "auc": 0.7470355731225297
+    },
+    "seniority": {
+      "gap_pp": -9.259944915771484,
+      "shortlist_gap_pp": -11.249999999999998,
+      "gap_removed_pp": 0.42986392974853516,
+      "gap_removed_pct": -4.868176525549003,
+      "mean_score_change_pp": 2.8791799545288086,
+      "auc": 0.6783080644209781
+    },
+    "certifications": {
+      "gap_pp": -8.830081939697266,
+      "shortlist_gap_pp": -12.5,
+      "gap_removed_pp": 9.5367431640625e-07,
+      "gap_removed_pct": -1.0800289577364147e-05,
+      "mean_score_change_pp": 0.0,
+      "auc": 0.7420211196979529
+    },
+    "project count": {
+      "gap_pp": -7.706688404083252,
+      "shortlist_gap_pp": -11.249999999999998,
+      "gap_removed_pp": -1.1233925819396973,
+      "gap_removed_pct": 12.722336111275814,
+      "mean_score_change_pp": 0.940956175327301,
+      "auc": 0.7301634121880715
+    },
+    "ALL identity cues": {
+      "gap_pp": 0.0,
+      "shortlist_gap_pp": 0.0,
+      "gap_removed_pp": -8.83008098602295,
+      "gap_removed_pct": 100.0,
+      "mean_score_change_pp": 18.479536056518555,
+      "auc": 0.736859182349124
+    },
+    "ALL qualification cues": {
+      "gap_pp": -4.113012313842773,
+      "shortlist_gap_pp": -6.25,
+      "gap_removed_pp": -4.717068672180176,
+      "gap_removed_pct": 53.420446309006444,
+      "mean_score_change_pp": -8.164196014404297,
+      "auc": 0.49690283759070264
+    }
+  }
+}

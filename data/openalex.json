@@ -1,0 +1,315 @@
+{
+  "resume_bias": [
+    {
+      "title": "Gender, Race, and Intersectional Bias in Resume Screening via Language Model Retrieval",
+      "year": 2024,
+      "doi": "https://doi.org/10.1609/aies.v7i1.31748",
+      "cited_by": 74,
+      "authors": [
+        "Kyra Wilson",
+        "Aylin Caliskan"
+      ],
+      "abstract": "Artificial intelligence (AI) hiring tools have revolutionized resume screening, and large language models (LLMs) have the potential to do the same. However, given the biases which are embedded within LLMs, it is unclear whether they can be used in this scenario without disadvantaging groups based on their protected attributes. In this work, we investigate the possibilities of using LLMs in a resume screening setting via a document retrieval framework that simulates job candidate selection. Using that framework, we then perform a resume audit study to determine whether a selection of Massive Text Embedding (MTE) models are biased in resume screening scenarios. We simulate this for nine occupations, using a collection of over 500 publicly available resumes and 500 job descriptions. We find that the MTEs are biased, significantly favoring White-associated names in 85.1% of cases and female-associated names in only 11.1% of cases, with a minority of cases showing no statistically significant differences. Further analyses show that Black males are disadvantaged in up to 100% of cases, replicating real-world patterns of bias in employment settings, and validate three hypotheses of intersectionality. We also find an impact of document length as well as the corpus frequency of names in the selection of resumes. These findings have implications for widely used AI tools that are automating employment, fairness, and tech policy."
+    },
+    {
+      "title": "Measuring gender and racial biases in large language models: Intersectional evidence from automated resume evaluation",
+      "year": 2025,
+      "doi": "https://doi.org/10.1093/pnasnexus/pgaf089",
+      "cited_by": 57,
+      "authors": [
+        "Jiafu An",
+        "Difang Huang",
+        "Chen Lin",
+        "Mingzhu Tai"
+      ],
+      "abstract": "In traditional decision-making processes, social biases of human decision makers can lead to unequal economic outcomes for underrepresented social groups, such as women and racial/ethnic minorities (1-4). Recently, the growing popularity of large language model (LLM)-based AI signals a potential shift from human to AI-based decision-making. How would this transition affect the distributional outcomes across social groups? Here, we investigate the gender and racial biases of a number of commonly used LLMs, including OpenAI's GPT-3.5 Turbo and GPT-4o, Google's Gemini 1.5 Flash, Anthropic AI's Claude 3.5 Sonnet, and Meta's Llama 3-70b, in a high-stakes decision-making setting of assessing entry-level job candidates from diverse social groups. Instructing the models to score \u223c361,000 resumes with randomized social identities, we find that the LLMs award higher assessment scores for female candidates with similar work experience, education, and skills, but lower scores for black male candidates with comparable qualifications. These biases may result in \u223c1-3 percentage-point differences in hiring probabilities for otherwise similar candidates at a certain threshold and are consistent across various job positions and subsamples. Meanwhile, many models are biased against black male candidates. Our results indicate that LLM-based AI systems demonstrate significant biases, varying in terms of the directions and magnitudes across different social groups. Further research is needed to comprehend the root causes of these outcomes and develop strategies to minimize the remaining biases in AI systems. As AI-based decision-making tools are increasingly employed across diverse domains, our findings underscore the necessity of understanding and addressing the potential unequal outcomes to ensure equitable outcomes across social groups."
+    },
+    {
+      "title": "Fairness Is Not Enough: Auditing Competence and Intersectional Bias in AI-powered Resume Screening",
+      "year": 2025,
+      "doi": "https://doi.org/10.48550/arxiv.2507.11548",
+      "cited_by": 0,
+      "authors": [
+        "Kevin Webster"
+      ],
+      "abstract": "The use of publicly available generative AI systems for resume evaluation is often justified by the assumption that these tools reduce bias relative to human judgment. However, this framing leaves a prior question unresolved: whether these systems are capable of performing the evaluative task at all. This study presents a two-part audit of eight widely used AI platforms used for resume screening. Drawing on the concept of the Illusion of Neutrality, the study examines cases in which systems appear demographically unbiased because they lack the ability to meaningfully differentiate among candidates. Experiment 1 evaluates racial and gender bias using matched fictitious resumes and finds that bias persists in context-dependent and intersectional forms. Some models penalize candidates for the presence of demographic signals, while others exhibit inconsistent patterns across roles and identities under controlled conditions. Experiment 2 evaluates task competence using resume-role mismatch and keyword-manipulation tests and finds that several models that appear relatively unbiased fail to distinguish relevant from irrelevant candidate experience in relation to the target role. In these cases, outputs appear stable or neutral not because the systems are fair, but because they fail to perform meaningful evaluation. Fairness assessments alone are therefore insufficient. The paper proposes a dual-validation framework that requires auditing for both demographic bias and evaluative competence as a minimum condition for responsible deployment."
+    },
+    {
+      "title": "Bias and Fairness in Large Language Models: A Survey",
+      "year": 2024,
+      "doi": "https://doi.org/10.1162/coli_a_00524",
+      "cited_by": 739,
+      "authors": [
+        "Isabel O. Gallegos",
+        "Ryan A. Rossi",
+        "Joe Barrow",
+        "Md Mehrab Tanjim",
+        "Sungchul Kim",
+        "Franck Dernoncourt",
+        "Tong Yu",
+        "Ruiyi Zhang",
+        "Nesreen K. Ahmed"
+      ],
+      "abstract": "Abstract Rapid advancements of large language models (LLMs) have enabled the processing, understanding, and generation of human-like text, with increasing integration into systems that touch our social sphere. Despite this success, these models can learn, perpetuate, and amplify harmful social biases. In this article, we present a comprehensive survey of bias evaluation and mitigation techniques for LLMs. We first consolidate, formalize, and expand notions of social bias and fairness in natural language processing, defining distinct facets of harm and introducing several desiderata to operationalize fairness for LLMs. We then unify the literature by proposing three intuitive taxonomies, two for bias evaluation, namely, metrics and datasets, and one for mitigation. Our first taxonomy of metrics for bias evaluation disambiguates the relationship between metrics and evaluation datasets, and organizes metrics by the different levels at which they operate in a model: embeddings, probabilities, and generated text. Our second taxonomy of datasets for bias evaluation categorizes datasets by their structure as counterfactual inputs or prompts, and identifies the targeted harms and social groups; we also release a consolidation of publicly available datasets for improved access. Our third taxonomy of techniques for bias mitigation classifies methods by their intervention during pre-processing, in-training, intra-processing, and post-processing, with granular subcategories that elucidate research trends. Finally, we identify open problems and challenges for future work. Synthesizing a wide range of recent research, we aim to provide a clear guide of the existing literature that empowers researchers and practitioners to better understand and prevent the propagation of bias in LLMs."
+    },
+    {
+      "title": "Artificial Intellegence In Recruitment Processes Benefits And Bias In Resume Screening In It Sector In Bangalore",
+      "year": 2025,
+      "doi": "https://doi.org/10.55248/gengpi.6.0725.25179",
+      "cited_by": 0,
+      "authors": [
+        "P S Adharsha",
+        "S N Monika",
+        "Veena Bhavikatti"
+      ],
+      "abstract": "This research paper investigates the impact of Artificial Intelligence (AI) on contemporary recruitment practices, focusing on a survey conducted in Bangalore, which is recognized as India's technology hub.The study analyzes how AI-powered tools are revolutionizing the process of resume screening by enhancing efficiency, minimizing human labor, and facilitating quicker candidate shortlisting.Nevertheless, in addition to these advantages, issues related to algorithmic bias, transparency deficits, and fairness in candidate assessment have surfaced.By employing a structured questionnaire distributed among HR professionals, recruiters, and job seekers in Bangalore, the research gathers a variety of viewpoints regarding the perceived benefits and drawbacks of AI in recruitment."
+    }
+  ],
+  "jobfair": [
+    {
+      "title": "JobFair: A Framework for Benchmarking Gender Hiring Bias in Large Language Models",
+      "year": 2024,
+      "doi": "https://doi.org/10.18653/v1/2024.findings-emnlp.184",
+      "cited_by": 13,
+      "authors": [
+        "Ze Wang",
+        "Zekun Wu",
+        "Xin Guan",
+        "Michael Thaler",
+        "Adriano Koshiyama",
+        "Skylar Lu",
+        "Sachin Beepath",
+        "Ediz Ertekin",
+        "Mar\u00eda P\u00e9rez\u2010Ortiz"
+      ],
+      "abstract": "The use of Large Language Models (LLMs) in hiring has led to legislative actions to protect vulnerable demographic groups.This paper presents a novel framework for benchmarking hierarchical gender hiring bias in Large Language Models (LLMs) for resume scoring, revealing significant issues of reverse gender hiring bias and overdebiasing.Our contributions are fourfold: Firstly, we introduce a new construct grounded in labour economics, legal principles, and critiques of current bias benchmarks: hiring bias can be categorized into two types: Level bias (difference in the average outcomes between demographic counterfactual groups) and Spread bias (difference in the variance of outcomes between demographic counterfactual groups); Level bias can be further subdivided into statistical bias (i.e.changing with non-demographic content) and tastebased bias (i.e.consistent regardless of nondemographic content).Secondly, the framework includes rigorous statistical and computational hiring bias metrics, such as Rank After Scoring (RAS), Rank-based Impact Ratio, Permutation Test, and Fixed Effects Model.Thirdly, we analyze gender hiring biases in ten state-of-the-art LLMs.Seven out of ten LLMs show significant biases against males in at least one industry.An industry-effect regression reveals that the healthcare industry is the most biased against males.Moreover, we found that the bias performance remains invariant with resume content for eight out of ten LLMs.This indicates that the bias performance measured in this paper might apply to other resume datasets with different resume qualities.Fourthly, we provide a user-friendly demo and resume dataset to support the adoption and practical use of the framework, which can be generalized to other social traits and tasks."
+    },
+    {
+      "title": "Measuring gender and racial biases in large language models: Intersectional evidence from automated resume evaluation",
+      "year": 2025,
+      "doi": "https://doi.org/10.1093/pnasnexus/pgaf089",
+      "cited_by": 57,
+      "authors": [
+        "Jiafu An",
+        "Difang Huang",
+        "Chen Lin",
+        "Mingzhu Tai"
+      ],
+      "abstract": "In traditional decision-making processes, social biases of human decision makers can lead to unequal economic outcomes for underrepresented social groups, such as women and racial/ethnic minorities (1-4). Recently, the growing popularity of large language model (LLM)-based AI signals a potential shift from human to AI-based decision-making. How would this transition affect the distributional outcomes across social groups? Here, we investigate the gender and racial biases of a number of commonly used LLMs, including OpenAI's GPT-3.5 Turbo and GPT-4o, Google's Gemini 1.5 Flash, Anthropic AI's Claude 3.5 Sonnet, and Meta's Llama 3-70b, in a high-stakes decision-making setting of assessing entry-level job candidates from diverse social groups. Instructing the models to score \u223c361,000 resumes with randomized social identities, we find that the LLMs award higher assessment scores for female candidates with similar work experience, education, and skills, but lower scores for black male candidates with comparable qualifications. These biases may result in \u223c1-3 percentage-point differences in hiring probabilities for otherwise similar candidates at a certain threshold and are consistent across various job positions and subsamples. Meanwhile, many models are biased against black male candidates. Our results indicate that LLM-based AI systems demonstrate significant biases, varying in terms of the directions and magnitudes across different social groups. Further research is needed to comprehend the root causes of these outcomes and develop strategies to minimize the remaining biases in AI systems. As AI-based decision-making tools are increasingly employed across diverse domains, our findings underscore the necessity of understanding and addressing the potential unequal outcomes to ensure equitable outcomes across social groups."
+    },
+    {
+      "title": "GBEM-UA: Gender Bias Evaluation and Mitigation for Ukrainian Large Language Models",
+      "year": 2025,
+      "doi": "https://doi.org/10.18653/v1/2025.unlp-1.8",
+      "cited_by": 0,
+      "authors": [
+        "Mykhailo Buleshnyi",
+        "Maksym Buleshnyi",
+        "Marta Sumyk",
+        "Nazarii Drushchak"
+      ],
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable performance across various domains, but they often inherit biases present in the data they are trained on, leading to unfair or unreliable outcomes-particularly in sensitive areas such as hiring, medical decision-making, and education.This paper evaluates gender bias in LLMs within the Ukrainian language context, where the gendered nature of the language and the use of feminitives introduce additional complexity to bias analysis.We propose a benchmark for measuring bias in Ukrainian and assess several debiasing methods, including prompt debiasing, embedding debiasing, and fine-tuning, to evaluate their effectiveness.Our results suggest that embedding debiasing alone is insufficient for a morphologically rich language like Ukrainian, whereas fine-tuning proves more effective in mitigating bias for domain-specific tasks."
+    },
+    {
+      "title": "Monocultural Biases: Correlated biases in large language models lead to unequal systemic exclusion rates in hiring",
+      "year": 2026,
+      "doi": "https://doi.org/10.48550/arxiv.2609.22169",
+      "cited_by": 0,
+      "authors": [
+        "Matthew Bone",
+        "Fabian Stephany",
+        "R. Maria del Rio-Chanona"
+      ],
+      "abstract": "Employers are increasingly using large language models (LLMs) to automate their hiring process. This paper investigates the risk of monocultural biases, in which the widespread deployment of large language models homogenizes biases across the labor market, leading to greater systemic exclusion for certain demographic groups. For ten LLMs, we measure hiring biases across their base and post-trained versions to identify which stage, pre-training or post-training, lead to monocultural biases. We find that, compared to their base models, post-trained models are 3.6% less likely to callback older applicants. This negative shift occurs in eight of the ten models that we evaluate. Post-trained models have much more correlated decisions than base models which is likely driven by human capital traits like skills or college major. However, greater consensus among models increases global systemic exclusion rates from 5.6% to 17.3% and exacerbates demographic inequalities, with intersectional systemic exclusion rates ranging from 12.2% to 21.7% for post-trained models. We find that this inequality is primarily driven by age-based discrimination that is exacerbated in post-training. These results indicate that while post-training techniques may improve models' abilities to select the best applicants, they may raise systemic inequality risks for those at the margin by uniformly introducing new biases."
+    },
+    {
+      "title": "WHEN FAIR AI BECOMES UNFAIR: A COUNTERFACTUAL AUDIT OF POSITIONAL BIAS IN LARGE LANGUAGE MODELS FOR HIRING DECISIONS",
+      "year": 2026,
+      "doi": "https://doi.org/10.56238/revgeov17n7-181",
+      "cited_by": 0,
+      "authors": [
+        "Arthur Mesquita Camargo",
+        "Rafaela Silva Figueiredo Camargo"
+      ],
+      "abstract": "As Large Language Models (LLMs) are increasingly integrated into high-stakes recruitment processes, rigorous audits to detect algorithmic bias have become critical. This study implements a multi-phase auditing protocol to evaluate gender, racial/ethnic, and positional bias in state-of-the-art proprietary models (gpt-4.1-mini, GPT-5.2, Claude Sonnet 4.6, Gemini 2.5 Pro) and in an exploratory lower-capacity model. Using a simulated CEO-selection scenario with 60 functionally identical profiles, we employ counterfactual testing to isolate the effects of demographic attributes and presentation order. The results reveal a sharp divergence in model behaviour. Frontier models demonstrated remarkable neutrality, with no statistically significant evidence of gender or racial bias. In contrast, the exploratory model exhibited extreme segregation, ranking all female candidates above all male candidates in the original condition (Cliff's \u03b4 = 1.0, p < .001). Counterfactual analysis revealed that the root cause was not gender bias per se but an overwhelming primacy bias, whereby candidates presented at the beginning of the prompt were disproportionately favoured. Claude Sonnet 4.6 additionally displayed a form of \"conscientious objection\", declining to differentiate identical profiles. We complement the experimental audit with an ecosystem-level analysis of 2,653 provider-model listings from the open Models.dev catalogue, which corroborates the open-weights contamination-surface hypothesis but rejects the assumption that systemic monoculture exposure is confined to open-source models. These findings indicate that (a) state-of-the-art LLMs can achieve a high degree of demographic neutrality; (b) fundamental artefacts such as positional bias can nonetheless produce severely discriminatory outcomes; and (c) bias auditing must extend beyond demographic parity to interaction artefacts and ecosystem structure."
+    }
+  ],
+  "goldin": [
+    {
+      "title": "Orchestrating Impartiality: The Impact of \u201cBlind\u201d Auditions on Female Musicians",
+      "year": 2000,
+      "doi": "https://doi.org/10.1257/aer.90.4.715",
+      "cited_by": 1757,
+      "authors": [
+        "Claudia Dale Goldin",
+        "Cecilia Elena Rouse"
+      ],
+      "abstract": "A change in the audition procedures of symphony orchestras\u2014adoption of \u201cblind\u201d auditions with a \u201cscreen\u201d to conceal the candidate's identity from the jury\u2014provides a test for sex-biased hiring. Using data from actual auditions, in an individual fixed-effects framework, we find that the screen increases the probability a woman will be advanced and hired. Although some of our estimates have large standard errors and there is one persistent effect in the opposite direction, the weight of the evidence suggests that the blind audition procedure fostered impartiality in hiring and increased the proportion women in symphony orchestras. (JEL J7, J16)"
+    },
+    {
+      "title": "Orchestrating Impartiality: The Impact of \u201cBlind\u201d Auditions on Female Musicians",
+      "year": 2018,
+      "doi": "https://doi.org/10.4324/9780429499821-66",
+      "cited_by": 51,
+      "authors": [
+        "Claudia Dale Goldin",
+        "Cecilia Elena Rouse"
+      ],
+      "abstract": "Sex-biased hiring has been alleged for many occupations but is extremely difficult to prove. A change in the way symphony orchestras recruit musicians provides an unusual way to test for sex-biased hiring. In blind auditions a screen is used to hide the identity of the player from the committee. The semifinal round, added as the number of applicants grew, may be blind. Finals are rarely blind and almost always involve the attendance and input of the music director. The impact of the screen is positive and large in magnitude, but only when there is no semifinal round. Women are about 5 percentage points more likely to be hired than are men in a completely blind audition, although the effect is not statistically significant. As in research in economics and other fields on double-blind refereeing, the impact of a blind procedure is toward impartiality and the costs to the journal are relatively small."
+    },
+    {
+      "title": "Orchestrating Impartiality: The Impact of \"Blind\" Auditions on Female Musicians",
+      "year": 1997,
+      "doi": "https://doi.org/10.3386/w5903",
+      "cited_by": 36,
+      "authors": [
+        "Claudia Dale Goldin",
+        "Cecilia Elena Rouse"
+      ],
+      "abstract": "Discrimination against women has been alleged in hiring practices for many occupations, but it is extremely difficult to demonstrate sex-biased hiring. A change in the way symphony orchestras recruit musicians provides an unusual way to test for sex-biased hiring. To overcome possible biases in hiring, most orchestras revised their audition policies in the 1970s and 1980s. A major change involved the use of blind auditions with a to conceal the identity of the candidate from the jury. Female musicians in the top 5 symphony orchestras in the United States were less than 5% of all players in 1970 but are 25% today. We ask whether women were more likely to be advanced and/ or hired with the use of blind auditions. Using data from actual auditions in an individual fixed-effects framework, we find that the screen increases- by 50% - the probability a woman will be advanced out of certain preliminary rounds. The screen also enhances, by several fold, the likelihood a female contestant will be the winner in the final round. Using data on orchestra personnel, the switch to blind auditions can explain between 30% and 55% of the increase in the proportion female among new hires and between 25% and 46% of the increase in the percentage female in the orchestras since 1970."
+    },
+    {
+      "title": "Hannelore Weck-Hannemann Recommends \u201cOrchestrating Impartiality: The Impact of \u2018Blind\u2019 Auditions on Female Musicians\u201d by Claudia Goldin and Cecilia Rouse",
+      "year": 2019,
+      "doi": "https://doi.org/10.1007/978-3-030-17740-9_57",
+      "cited_by": 0,
+      "authors": [
+        "Hannelore Weck\u2010Hannemann"
+      ],
+      "abstract": ""
+    },
+    {
+      "title": "Orchestrating Impartiality: The Impact of",
+      "year": 1997,
+      "doi": null,
+      "cited_by": 230,
+      "authors": [
+        "Claudia Dale Goldin",
+        "Cecilia Elena Rouse"
+      ],
+      "abstract": "Discrimination against women has been alleged in hiring practices for many occupations, but it is extremely difficult to demonstrate sex-biased hiring. A change in the way symphony orchestras recruit musicians provides an unusual way to test for sex-biased hiring. To overcome possible biases in hiring, most orchestras revised their audition policies in the 1970s and 1980s. A major change involved the use of blind' auditions with a screen' to conceal the identity of the candidate from the jury. Female musicians in the top five symphony orchestras in the United States were less than 5% of all players in 1970 but are 25% today. We ask whether women were more likely to be advanced and/or hired with the use of blind' auditions. Using data from actual auditions in an individual fixed-effects framework, we find that the screen increases by 50% the probability a woman will be advanced out of certain preliminary rounds. The screen also enhances, by severalfold, the likelihood a female contestant will be the winner in the final round. Using data on orchestra personnel, the switch to blind' auditions can explain between 30% and 55% of the increase in the proportion female among new hires and between 25% and 46% of the increase in the percentage female in the orchestras since 1970."
+    }
+  ],
+  "name_blind": [
+    {
+      "title": "Field Experiments of Discrimination in the Market Place",
+      "year": 2002,
+      "doi": "https://doi.org/10.1111/1468-0297.00080",
+      "cited_by": 910,
+      "authors": [
+        "Peter Andrew Riach",
+        "Judith Rich"
+      ],
+      "abstract": "Controlled experiments, using matched pairs of bogus transactors, to test for discrimination in the marketplace have been conducted for over 30 years, and have extended across 10 countries. Significant, persistent and pervasive levels of discrimination have been found against non\u2010whites and women in labour, housing and product markets. Rates of employment discrimination against non\u2010whites, in excess of 25% have been measured in Australia, Europe and North America. A small number of experiments have also investigated employment discrimination against the disabled in Britain and the Netherlands, and against older applicants in the United States."
+    },
+    {
+      "title": "Field Experiments in Organizations",
+      "year": 2017,
+      "doi": "https://doi.org/10.1146/annurev-orgpsych-041015-062400",
+      "cited_by": 169,
+      "authors": [
+        "Dov Eden"
+      ],
+      "abstract": "Field experimentation, although rare, is the sterling-gold standard of organizational research methods. It yields the best internally valid and generalizable findings compared to more fallible methods. Reviewers in many psychology specialties, including organizational psychology, synthesize largely nonexperimental research, warn of causal ambiguity, and call for experimental replication. These calls go mostly unheeded. Practical application is a raison d'\u00eatre for much organizational research. With the emergence of evidence-based management, field experiments enable us to deliver the most actionable tools to practitioners. This review explicates the role of experimental control and randomization and enumerates some of the factors that mitigate field experimentation. It describes, instantiates, and evaluates true field experiments, quasi-experiments, quasi-fields, combo designs, and triangulation. It also provides practical tips for overcoming deterrents to field experimentation. The review ends describing the merging of new technologies with classical experimental design and prophesying the bright future of organizational field experimentation."
+    },
+    {
+      "title": "Discrimination in Scientific Review - A natural field experiment on blind versus non-blind review",
+      "year": 2009,
+      "doi": null,
+      "cited_by": 0,
+      "authors": [
+        "Fredrik Carlsson",
+        "\u00c5sa L\u00f6fgren",
+        "Thomas Sterner"
+      ],
+      "abstract": "This paper analyzes the impacts of gender, as well as other author characteristics, on reviewers\u2019 grading of papers submitted to an international conference in economics in Sweden in 2008. Correcting for other variables, including country and research field as well as researcher academic level, we focus on the difference in grades between blind and non-blind review treatments. We find little effect of non-blind reviewing and no significant evidence of gender or any other type of discrimination. Furthermore, we do not find any significant difference between the average grading by female and male reviewers."
+    },
+    {
+      "title": "Double\u2010blind peer review\u2014An experiment",
+      "year": 2019,
+      "doi": "https://doi.org/10.1111/1365-2435.13269",
+      "cited_by": 11,
+      "authors": [
+        "Charles W. Fox",
+        "Ken A. Thompson",
+        "Alan K. Knapp",
+        "Lara A. Ferry",
+        "Enrico L. Rezende",
+        "Emilie Aim\u00e9",
+        "Jennifer Meyer"
+      ],
+      "abstract": "2018 was a good year for Functional Ecology. Submissions to the journal remain high, having topped 1,200 at the time we write this editorial (early December 2018), on pace for just shy of 1,300 for the year, similar to the number received in 2017. The journal remains as selective as ever, accepting just over 16% of submissions. Our impact factor remains high, currently 5.49, and our ranking among all ecology journals is high, 9th based on Google Scholar's h5 index. Especially positive this past year is that the time from acceptance of a paper to its publication in an issue improved quite a bit, thanks to an opportunity we had to publish extra pages and reduce our backlog of in press papers. Our editorial team also remains one of the most diverse among the top ecology journals, with five Senior Editors drawn from three continents, and 98 Associate Editors (45% women) drawn from 22 countries and every continent (except Antarctica). At the risk of too much \u201ctooting our own horn,\u201d we thank this outstanding team for helping us continue to publish some of the most innovative and thought-provoking research in the field. Overall, the journal is in a good place, and we are very positive about our future. We anticipate that we will continue to publish similarly outstanding ecological research papers over the coming year. We also plan to publish at least four new special features, and a variety of commissioned review papers, in 2019. But we are especially excited to announce two new initiatives. One of these is the launch of a named annual review paper series, the Calow-Grace Reviews. The other is the start of a journal-wide experiment evaluating alternative models of peer review. There is a widespread perception among researchers that systemic biases influence the outcomes of peer review. In particular, there is concern that the gender, nationality, location or reputation of authors may influence how manuscripts are assessed by reviewers due to unconscious, or sometimes conscious, biases (Lee, Sugimoto, Zhang, & Cronin, 2013). For example, papers with highly regarded authors, or authors from prestigious institutions, can obtain higher scores during peer review (Blank, 1991; Tomkins, Zhang, & Heavlin, 2017). Editors and reviewers may also favour authors from the same country or that speak the same language as themselves (Murray et al., 2018). However, the source of potential bias that has received the most attention is author gender, for which studies are highly inconsistent in their outcomes. Some studies have found that papers by female authors obtain lower peer review scores, or have lower acceptance rates, at academic journals (Walker, Barros, Conejo, Neumann, & Telefont, 2015; Murray et al., 2018; and references therein), but others have failed to find a gender difference in peer review outcomes, or have even found that papers authored by women perform better than those authored by men (Lerback & Hanson, 2017). This inconsistency among studies, and the inability of most studies to distinguish among possible causes for differences they do observe, leave us uncertain about the influence of gender (and other author characteristics) on peer review. To reduce the influence of potential biases on peer review, a handful of journals in ecology have adopted new models of peer review, either requiring that author identities be masked from reviewers or allowing authors to choose whether their identity is disclosed to reviewers. However, the effectiveness of double-blind peer review in eliminating reviewer biases is uncertain, partly because few of the randomized trials that have been performed test for effects of author characteristics, and those studies that do generally have small sample sizes, lack appropriate controls, or are inconsistent in their conclusions. Nonetheless, many researchers believe that blinding of author identities will be effective at reducing or eliminating biases, and thus prefer double-blind peer review over the traditional single-blind model (Mulligan, Hall, & Raphael, 2013). We do not know whether the outcomes of peer review of papers to Functional Ecology are subject to the unconscious biases of the journal's reviewers. Whether such biases are present or not, the perception that such biases exist undermines confidence in the objectivity and fairness of peer review. Thus, beginning later this year, Functional Ecology will begin an experiment to test whether papers submitted to the journal experience discrimination based on characteristics of the authors \u2014age, gender and location, among others\u2014 and to evaluate the broader consequences for the journal (and our authors) of adopting a double-blind model. Specifically, we will perform an experiment in which papers submitted to the journal are randomly assigned to one of two treatments, one treatment in which the authors\u2019 identities are blinded to reviewers (double-blind peer review), and the other in which author's will be identified to reviewers (our current model). We do not have space in this editorial to summarize all of the details of the experiment, so will just highlight our objectives and a few key points below. A primary objective of this double-blind experiment will be to test whether papers reviewed by Functional Ecology are subject to biases dependent on characteristics of the authors, such as age, gender, geographic location, native language, reputation and home institution. However, we will also examine a variety of other questions regarding the role of anonymity in peer review, including whether anonymizing authors influences our ability to recruit reviewers, the quality of reviews received (such as the tone and length of the submitted review), or the average rating given to papers, irrespective of author characteristics. We will also survey authors (after the final decisions are rendered on papers) to assess their opinions of various aspects of the peer review process, including the specifics of how their paper was reviewed, and survey reviewers to assess both their opinions of double-blind peer review and their ability to identify the authors of the paper they reviewed (i.e., to assess the effectiveness of the blinding process). Finally, we will quantify the additional editorial office time required to run a double-blind peer review process. This is an ambitious project intended to provide the data necessary for this journal, and hopefully for other ecological journals, to assess the costs and benefits of double-blind peer review. If you are an author considering submitting your paper to Functional Ecology, you are likely wondering how this experiment will affect your submission to the journal. In short, we plan for this to have very little effect on the submission process. The primary change, from the author perspective, will be that all parts of your manuscript that contain author identifiers\u2014particularly the title page and acknowledgements\u2014will need to be uploaded as separate documents. Whether these parts of your manuscript will be provided to reviewers will depend on the treatment to which the manuscript is assigned, and will be handled \u201cbehind the scenes\u201d in our manuscript tracking system. Authors will also be asked to provide some demographic data about themselves upon submission of their paper. We recognize that some authors may be hesitant to submit demographic information to the journal, but we emphasize that these data will not be available to editors handling manuscripts and will only be available to the researchers under the guidance of university \u201cresearch with human subjects\u201d guidelines and in compliance with US and UK law. Authors may also wonder whether they can choose how their manuscript will be reviewed, with their identity blinded or not, or whether they can opt out of the experiment. The short answer is \u201cno\u201d; whether author identities are blinded during peer review will be determined randomly and not by the authors or even by the editorial office. Peer review will be handled identically for all papers with the exception of whether author-identifying information is present in review invitation letters and on title pages and acknowledgement sections (as they currently are). Authors will be notified, at the time of submission of their manuscript, that their manuscript will be part of the experiment, and will need to agree to participate in the randomized trial before their manuscript can be reviewed. However, they will not be provided information on how their manuscript has been reviewed\u2014single versus double blind\u2014until after the final decision has been rendered. Further details of our peer review experiment will be shared on the Functional Ecology blog (functionalecologists.com) as we get closer to our start date. For further background on the costs and benefits of double-blind peer review, please see the blog post by Bob O'Hara on the Methods in Ecology and Evolution blog (https://methodsblog.com/2016/09/22/peer-review-week-should-we-use-double-blind-peer-review-the-evidence/). We welcome feedback on this project. Please send your comments or queries to Emilie Aim\u00e9, our Managing Editor (emilie@britishecologicalsociety.org). We are also pleased to announce that, in 2019, Functional Ecology will recruit the first paper for our new annual Calow-Grace review series. For this series, we will invite researchers who have made significant contributions to ecology (as did Peter Calow and John Grace), and ask them to share their perspective on one of the many topics (of their choice) that lie within Functional Ecology's broad scope. Authors for our Calow-Grace series will be chosen from among our most innovative thinkers, and for their experience and depth of knowledge of the field. Authors will be asked to place ideas in a historical context, but will be especially encouraged to be speculative and forward thinking, offering novel insights that will push ecological research forward into important new areas. The first paper in the new series will be invited shortly, so look for it to be published in early 2020. We opted to name our annual series the Calow-Grace reviews to honour the journal's two founding editors, Peter Calow and John Grace, both of whom are important figures in ecology, and without whom the journal would not be what it is today. Naming this review after Peter and John is an important nod to our journal's proud history, but we also pride ourselves on being a forward-looking journal. In particular, we recognize the importance of diversity to the field of ecology, and thus will ensure that authors of the Calow-Grace reviews reflect the diversity of experiences that is a strength of our field. We are pleased to kick off 2019 with the current issue, in which we include the first of several special features we will be publishing this year. Special features in Functional Ecology are sets of conceptual-focused and synthetic papers, including a mix of reviews and perspectives, that collectively review the current state of the literature, highlight recent advances, develop new concepts, and provide insights for important avenues of future research. In this issue, we include the special feature \u201cEco-Evolutionary Dynamics Across Scales,\u201d guest edited by Franziska Brunner, Jacques Deere, Martijn Egas, Christophe Eizaguirre and Joost Raeymaekers (Brunner et al., 2019). The recognition that the rate of evolution can be exceptionally fast in response to ecological change has required ecologists to re-evaluate the historical concepts of \u201cecological time\u201d and \u201cevolutionary time\u201d that were so commonly treated as distinct timescales in ecology textbooks just a generation ago. We now know that evolutionary responses to ecological change can occur very fast, and can have effects on ecological interactions, such that understanding the interaction between ecological and evolutionary dynamics has become essential to understanding patterns of biodiversity (Pelletier, Garant, & Hendry, 2009) and both community and ecosystem processes (Fussmann, Loreau, & Abrams, 2007). In this special feature, Franziska Brunner and her colleagues collect together a set of reviews, perspectives and empirical papers investigating the context-dependent nature of feedbacks between ecological and evolutionary processes, aptly named \u201ceco-evolutionary feedbacks,\u201d with an emphasis on the role of scale in understanding these feedbacks. Unlike most of our special features, this was a cross-journal project, including 10 contributions (plus an editorial) spread between two journals, the Journal of Animal Ecology and, of course, Functional Ecology. Later this year look for us to publish more special features, including one on \u201ccoral reef functioning in the Anthropocene,\u201d another on \u201csensory ecology and social decisions\u201d and one on \u201csenescence at the crossroads of ecology, physiology, health and evolution\u201d (exact titles are likely to evolve between now and publication). Other special features, including one on evolution of microbiomes, are \u201cin the pipeline\u201d and may also make it to print before the end of the year. The editors of Functional Ecology are always eager to discuss new special feature topics. If you are coordinating a symposium on an emerging or particularly timely topic in ecology, or if have a topic you believe deserving of a special feature, feel free to reach out to any of the members of our editorial team, or contact us at the journal's primary email address (admin@functionalecology.org), and we will be happy to discuss your ideas. We have also published an excellent selection of stand-alone review articles this year, thanks to our authors and to our outstanding Reviews Editor, Emma Sayer, who works tirelessly to recruit and edit these reviews. Emma has written an editorial (Sayer, 2018) which gives useful advice to authors on how to write a synthetic review article."
+    },
+    {
+      "title": "Discrimination in Scientific Review: A Natural Field Experiment on Blind versus Non\u2010Blind Reviews*",
+      "year": 2012,
+      "doi": "https://doi.org/10.1111/j.1467-9442.2011.01690.x",
+      "cited_by": 21,
+      "authors": [
+        "Fredrik Carlsson",
+        "\u00c5sa L\u00f6fgren",
+        "Thomas Sterner"
+      ],
+      "abstract": "Abstract Using papers submitted to an international conference on economics held in Sweden in 2008, we analyze how gender, as well as other characteristics of the authors and reviewers, affects the grading of these papers by the reviewers. Correcting for other variables, including the country and research field, as well as the academic level of the author, we focus on the difference in grades between blind and non\u2010blind review treatments. We find that non\u2010blind reviewing has little effect, and there is no significant evidence of gender discrimination. Furthermore, we do not find any significant difference between the average grading by female and male reviewers."
+    }
+  ],
+  "ats_audit": [
+    {
+      "title": "Mitigating Algorithmic Bias in AI-Based Resume Screening Systems Using Anonymization and Fairness Auditing",
+      "year": 2025,
+      "doi": "https://doi.org/10.5281/zenodo.17533209",
+      "cited_by": 0,
+      "authors": [
+        "bansal, nishant"
+      ],
+      "abstract": "Automated resume screening systems are being largely utilized at an advancing rate due to advantages over manual filtering by companies that provide hiring solutions. They allow organizations to manage a more significant number of candidate applications in a significantly shorter time. However, the use of machine learning raises important issues related to fairness, accountability, and transparency. Research shows that these systems often reflect or amplify biases present in their training datasets, resulting in discriminatory outcomes based on gender, race, or socioeconomic status. This proposal examines how anonymization and fairness auditing can be used together to reduce algorithmic bias in AIbased hiring systems. By reviewing academic literature and regulatory guidelines, the proposed research will develop, implement, and assess a clear method for detecting and reducing bias. The results aim to enhance both the technical and ethical understanding of fairness, guiding the responsible use of AI in recruitment."
+    },
+    {
+      "title": "Gender, Race, and Intersectional Bias in Resume Screening via Language Model Retrieval",
+      "year": 2024,
+      "doi": "https://doi.org/10.1609/aies.v7i1.31748",
+      "cited_by": 74,
+      "authors": [
+        "Kyra Wilson",
+        "Aylin Caliskan"
+      ],
+      "abstract": "Artificial intelligence (AI) hiring tools have revolutionized resume screening, and large language models (LLMs) have the potential to do the same. However, given the biases which are embedded within LLMs, it is unclear whether they can be used in this scenario without disadvantaging groups based on their protected attributes. In this work, we investigate the possibilities of using LLMs in a resume screening setting via a document retrieval framework that simulates job candidate selection. Using that framework, we then perform a resume audit study to determine whether a selection of Massive Text Embedding (MTE) models are biased in resume screening scenarios. We simulate this for nine occupations, using a collection of over 500 publicly available resumes and 500 job descriptions. We find that the MTEs are biased, significantly favoring White-associated names in 85.1% of cases and female-associated names in only 11.1% of cases, with a minority of cases showing no statistically significant differences. Further analyses show that Black males are disadvantaged in up to 100% of cases, replicating real-world patterns of bias in employment settings, and validate three hypotheses of intersectionality. We also find an impact of document length as well as the corpus frequency of names in the selection of resumes. These findings have implications for widely used AI tools that are automating employment, fairness, and tech policy."
+    },
+    {
+      "title": "Mitigating Algorithmic Bias in AI-Based Resume Screening Systems Using Anonymization and Fairness Auditing",
+      "year": 2025,
+      "doi": "https://doi.org/10.36227/techrxiv.176288180.07809430/v1",
+      "cited_by": 0,
+      "authors": [
+        "Nishant Bansal"
+      ],
+      "abstract": "Automated resume screening systems are being largely utilized at an advancing rate due to advantages over manual filtering by companies that provide hiring solutions. They allow organizations to manage a more significant number of candidate applications in a significantly shorter time. However, the use of machine learning raises important issues related to fairness, accountability, and transparency. Research shows that these systems often reflect or amplify biases present in their training datasets, resulting in discriminatory outcomes based on gender, race, or socioeconomic status. This proposal examines how anonymization and fairness auditing can be used together to reduce algorithmic bias in AIbased hiring systems. By reviewing academic literature and regulatory guidelines, the proposed research will develop, implement, and assess a clear method for detecting and reducing bias. The results aim to enhance both the technical and ethical understanding of fairness, guiding the responsible use of AI in recruitment."
+    },
+    {
+      "title": "Racial and Gender Disparities in AI-Based Resume Screening: An Audit Study of 12 Corporate Automated Hiring Platforms",
+      "year": 2020,
+      "doi": "https://doi.org/10.67698/pjpcr.2026.0086",
+      "cited_by": 0,
+      "authors": [
+        "Josephine A. Osei",
+        "Marcus L. Williams",
+        "Tara M. Krishnaswamy"
+      ],
+      "abstract": "This study investigates racial and gender disparities in callback rates produced by AI-based resume screening systems across 12 corporate automated recruitment platforms within the context of AI ethics and computational social science, an area of growing scientific importance given its implications for AI hiring system auditing requirements, equal employment opportunity enforcement, and fair ML model development standards. Using correspondence audit study submitting 4,800 resumes (400 per platform) with factorial manipulation of applicant name racial/gender signaling while holding all qualifications constant, we examine AI screening model training data encoding historical hiring biases translating into differential callback rates for racially/gender-coded names even with equivalent qualifications in 4,800 resume submissions to 12 AI hiring platforms across 8 industry sectors with 4 name conditions (Black female, Black male, White female, White male) drawn from online resume submission portals of 12 large U.S. corporations using AI-based applicant tracking systems for initial resume screening. Results indicate that AI screening systems produce mean callback rates of 34.2% for White male names versus 21.4% for Black female names (12.8 pp gap), with largest disparities in finance (18.4 pp) and technology (16.2 pp) sectors (p < 0.001), with 12.8 pp gap (34.2% White male vs. 21.4% Black female callback rate) as the primary quantitative benchmark. Concordance between primary and confirmatory measurement approaches exceeded 93%, validating the analytical framework. These findings contribute empirically to AI ethics and computational social science and carry actionable implications for the design of programs and policies targeting AI hiring system auditing requirements, equal employment opportunity enforcement, and fair ML model development standards."
+    },
+    {
+      "title": "Bias Aware Resume Screening",
+      "year": 2026,
+      "doi": "https://doi.org/10.38124/ijisrt/26may1138",
+      "cited_by": 0,
+      "authors": [
+        "A. Hemanth Datta",
+        "A. Hrushi Jiyyan",
+        "G. Nagi Reddy",
+        "K. Sreekala",
+        "Manas Kumar Rath"
+      ],
+      "abstract": "Automated resume screening systems are widely used to manage large volumes of job applications; however, many existing approaches rely on rigid keyword matching or accuracy-focused machine learning models that fail to capture contextual skill relevance and may introduce algorithmic bias. This paper proposes a bias-aware automated resume screening framework that utilizes Natural Language Processing (NLP) techniques to analyze contextual relationships between candidate skills, experience, and job requirements. The system mitigates bias by identifying and neutralizing sensitive textual cues related to protected attributes such as gender or ethnicity. To evaluate robustness, screening outcomes are compared before and after the removal of noise and bias-related information. A Decision Stability Metric is introduced to measure the consistency of candidate rankings under controlled textual perturbations. Additionally, confidence calibration techniques are applied to ensure that the predicted probabilities accurately reflect the reliability of model decisions. The framework also improves transparency in automated hiring by enabling more consistent and interpretable candidate evaluation."
+    }
+  ]
+}

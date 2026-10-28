@@ -1,0 +1,180 @@
+{
+  "splits": {
+    "train_rows": 1280,
+    "test_rows": 320,
+    "train_bases": 640,
+    "test_bases": 160
+  },
+  "head": {
+    "full": {
+      "label": "full",
+      "auc": 0.7420211196979529,
+      "balanced_acc": 0.5882248834876999,
+      "score_f": 0.14480938017368317,
+      "score_m": 0.2331101894378662,
+      "gap_pp": -8.83008098602295,
+      "male_win_rate": 0.85,
+      "shortlist_f": 0.1375,
+      "shortlist_m": 0.2625,
+      "shortlist_gap_pp": -12.5,
+      "threshold": 0.3406311273574829
+    },
+    "name_masked": {
+      "label": "name_masked",
+      "auc": 0.7374196212612826,
+      "balanced_acc": 0.61960946256858,
+      "score_f": 0.16194704174995422,
+      "score_m": 0.2389087975025177,
+      "gap_pp": -7.696175575256348,
+      "male_win_rate": 0.9,
+      "shortlist_f": 0.13125,
+      "shortlist_m": 0.26875,
+      "shortlist_gap_pp": -13.749999999999998,
+      "threshold": 0.36054709553718567
+    },
+    "proxy_scrubbed": {
+      "label": "proxy_scrubbed",
+      "auc": 0.7413426936463926,
+      "balanced_acc": 0.6167482744380862,
+      "score_f": 0.2128291130065918,
+      "score_m": 0.2128291130065918,
+      "gap_pp": 0.0,
+      "male_win_rate": 0.0,
+      "shortlist_f": 0.2,
+      "shortlist_m": 0.2,
+      "shortlist_gap_pp": 0.0,
+      "threshold": 0.3961949944496155
+    },
+    "name_masked+leace": {
+      "label": "name_masked+leace",
+      "auc": 0.735354846321751,
+      "balanced_acc": 0.6011739720370479,
+      "score_f": 0.1985352784395218,
+      "score_m": 0.2003219574689865,
+      "gap_pp": -0.17866790294647217,
+      "male_win_rate": 0.525,
+      "shortlist_f": 0.1875,
+      "shortlist_m": 0.2125,
+      "shortlist_gap_pp": -2.4999999999999996,
+      "threshold": 0.3458334803581238
+    },
+    "proxy_scrubbed+leace": {
+      "label": "proxy_scrubbed+leace",
+      "auc": 0.741696655064598,
+      "balanced_acc": 0.6167482744380862,
+      "score_f": 0.21284885704517365,
+      "score_m": 0.21284885704517365,
+      "gap_pp": 0.0,
+      "male_win_rate": 0.0,
+      "shortlist_f": 0.2,
+      "shortlist_m": 0.2,
+      "shortlist_gap_pp": 0.0,
+      "threshold": 0.39583319425582886
+    }
+  },
+  "probe": {
+    "full": {
+      "acc": 1.0,
+      "sd": 0.0,
+      "layer": 6
+    },
+    "name_masked": {
+      "acc": 1.0,
+      "sd": 0.0,
+      "layer": 6
+    },
+    "proxy_scrubbed": {
+      "acc": 0.5,
+      "sd": 0.0,
+      "layer": 6
+    },
+    "name_masked+leace": {
+      "acc": 0.578125,
+      "sd": 0.05038911092686594,
+      "layer": 6
+    },
+    "proxy_scrubbed+leace": {
+      "acc": 0.5,
+      "sd": 0.0,
+      "layer": 6
+    }
+  },
+  "activation": {
+    "name_masked+leace": {
+      "norm_before": 0.9606510996818542,
+      "norm_after": 0.8454465270042419,
+      "mean_norm": 2.0455613136291504,
+      "relative_before": 0.46962714195251465,
+      "relative_after": 0.047205157577991486,
+      "presence_before": 3.7123952306025028,
+      "presence_after": 3.267192069648847,
+      "cosine": -0.0198302511125803
+    },
+    "proxy_scrubbed+leace": {
+      "norm_before": 0.0,
+      "norm_after": 0.0,
+      "mean_norm": 2.30672025680542,
+      "relative_before": 0.0,
+      "relative_after": 0.0,
+      "presence_before": 0.0,
+      "presence_after": 0.0,
+      "cosine": 0.0
+    },
+    "full": {
+      "norm": 1.0077919960021973,
+      "mean_norm": 2.0089545249938965,
+      "relative": 0.5016499757766724,
+      "presence": 3.625779037869906
+    },
+    "name_masked": {
+      "norm": 0.9606510996818542,
+      "mean_norm": 2.0455613136291504,
+      "relative": 0.46962714195251465,
+      "presence": 3.7123952306025028
+    },
+    "proxy_scrubbed": {
+      "norm": 0.0,
+      "mean_norm": 2.30672025680542,
+      "relative": 0.0,
+      "presence": 0.0
+    }
+  },
+  "layer_probe_full": [
+    {
+      "layer": 0,
+      "acc": 0.5,
+      "sd": 0.0
+    },
+    {
+      "layer": 1,
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    {
+      "layer": 2,
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    {
+      "layer": 3,
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    {
+      "layer": 4,
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    {
+      "layer": 5,
+      "acc": 1.0,
+      "sd": 0.0
+    },
+    {
+      "layer": 6,
+      "acc": 1.0,
+      "sd": 0.0
+    }
+  ],
+  "retention": 0.9011007111917874
+}

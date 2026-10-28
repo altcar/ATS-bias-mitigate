@@ -1,0 +1,32 @@
+{
+  "full": {
+    "norm": 12.882591247558594,
+    "mean_norm": 19.458629608154297,
+    "relative": 0.6620503067970276,
+    "presence": 0.2866962122376453
+  },
+  "name_masked": {
+    "norm": 15.015279769897461,
+    "mean_norm": 19.421226501464844,
+    "relative": 0.7731375694274902,
+    "presence": 0.23833292543143814
+  },
+  "proxy_scrubbed": {
+    "norm": 0.0,
+    "mean_norm": 19.555692672729492,
+    "relative": 0.0,
+    "presence": 0.0
+  },
+  "leace": {
+    "norm_before": 15.015279769897461,
+    "norm_after": 0.8454465270042419,
+    "mean_norm_before": 19.421226501464844,
+    "mean_norm_after": 17.910045623779297,
+    "relative_before": 0.7731375694274902,
+    "relative_after": 0.047205157577991486,
+    "presence_before": 0.23833292543143814,
+    "presence_after": 0.013419513133596869,
+    "cosine": -0.01275163795799017
+  },
+  "retention": 0.046807430865090406
+}
