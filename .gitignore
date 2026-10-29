@@ -1,5 +1,9 @@
-# Python environment
+# Python environment — must never be committed (local venv is ~1.5 GB)
 .venv/
+venv/
+env/
+
+# Python caches
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
@@ -14,6 +18,9 @@ desktop.ini
 .vscode/
 .idea/
 
-# Transient website previews
-assets/site-*.png
-assets/website-*.png
+# Transient website previews (screenshots taken while iterating on the site)
+ats-bias-audit/assets/site-*.png
+ats-bias-audit/assets/website-*.png
+
+# Local staging directory used when previewing the published site
+_site/

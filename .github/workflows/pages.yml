@@ -1,7 +1,8 @@
 name: Publish site
 
-# Publishes index.html, analysis.html, the deck and chart assets to GitHub Pages
-# on every push to main. No external host or extra credentials are needed.
+# Publishes the whole hackathon folder to GitHub Pages on every push to main.
+# index.html (the one-page site) is served at the site root; every other file
+# keeps its path, so the deck, PDF, DOCX and evidence book are all reachable.
 on:
   push:
     branches: [main]
@@ -12,7 +13,7 @@ permissions:
   pages: write
   id-token: write
 
-# Let a in-flight deploy finish, but keep only one queued run.
+# Let an in-flight deploy finish, but keep only one queued run.
 concurrency:
   group: pages
   cancel-in-progress: false
@@ -28,12 +29,24 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p _site
-          cp index.html analysis.html presentation.pptx _site/
-          cp -R assets _site/assets
+          rsync -a \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '_site' \
+            ./ _site/
+
+          # Serve the one-page site at the site root. It references assets/
+          # relatively, so those are mirrored next to it and the one link to
+          # the evidence book is rewritten for the new depth.
+          cp ats-bias-audit/index.html _site/index.html
+          cp -R ats-bias-audit/assets _site/assets
+          sed -i 's|href="analysis.html"|href="ats-bias-audit/analysis.html"|g' _site/index.html
+
           # Skip Jekyll processing; the files are already static HTML.
           touch _site/.nojekyll
-          echo "Staged files:"
-          find _site -type f | sort
+
+          echo "Staged $(find _site -type f | wc -l) files, $(du -sh _site | cut -f1):"
+          find _site -maxdepth 2 -type f | sort
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
