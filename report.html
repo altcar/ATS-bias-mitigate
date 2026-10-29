@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Written report — ATS Bias Audit</title>
+<meta name="description" content="Written report on routing AI requests to available hardware, readable in the browser.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --paper: #0a100e;
+    --paper-2: #111a16;
+    --ink: #f1f5ef;
+    --muted: #a8b5ac;
+    --line: #2b3831;
+    --accent: #8ba8ff;
+    --display: "Bricolage Grotesque", "Arial Black", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  a:hover { color: var(--accent); }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 22px;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper-2);
+    flex: 0 0 auto;
+  }
+
+  .brand {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .brand:hover { color: var(--ink); }
+
+  .bar h1 {
+    margin: 0;
+    font-family: var(--display);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -.01em;
+  }
+  .bar h1 span {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-left: 8px;
+    letter-spacing: .06em;
+  }
+
+  .actions { display: flex; gap: 8px; }
+  .actions a {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .actions a:hover { color: var(--ink); border-color: var(--accent); }
+
+  .frame {
+    flex: 1 1 auto;
+    min-height: 0;
+    background: var(--paper-2);
+  }
+
+  .frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  @media (max-width: 640px) {
+    .bar { padding: 10px 14px; }
+    .bar h1 { display: none; }
+  }
+</style>
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="index.html">&larr; ATS Bias Audit</a>
+    <h1>Written report <span>5 pages</span></h1>
+    <div class="actions">
+      <a href="viewer/report.pdf" target="_blank" rel="noopener">Open PDF</a>
+      <a href="A%C2%A0lightweight%20API%20that%20route%20AI%20requests.docx" download>.docx</a>
+    </div>
+  </header>
+
+  <main class="frame">
+    <iframe src="viewer/report.pdf#view=FitH" title="Written report: a lightweight API that routes AI requests">
+      <p>Your browser cannot display PDFs inline. <a href="viewer/report.pdf">Open the report</a>.</p>
+    </iframe>
+  </main>
+</body>
+</html>

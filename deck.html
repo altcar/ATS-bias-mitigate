@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deck — ATS Bias Audit</title>
+<meta name="description" content="Nineteen-slide deck for the ATS gender bias audit, readable in the browser.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --paper: #0a100e;
+    --paper-2: #111a16;
+    --ink: #f1f5ef;
+    --muted: #a8b5ac;
+    --line: #2b3831;
+    --accent: #8ba8ff;
+    --orange: #ff7a56;
+    --display: "Bricolage Grotesque", "Arial Black", sans-serif;
+    --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  a:hover { color: var(--accent); }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 22px;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper-2);
+    flex: 0 0 auto;
+  }
+
+  .brand {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .brand:hover { color: var(--ink); }
+
+  .bar h1 {
+    margin: 0;
+    font-family: var(--display);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -.01em;
+  }
+  .bar h1 span {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-left: 8px;
+    letter-spacing: .06em;
+  }
+
+  .actions { display: flex; gap: 8px; }
+  .actions a {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .actions a:hover { color: var(--ink); border-color: var(--accent); }
+
+  .stage {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .slide {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    height: 100%;
+  }
+  .slide img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .55);
+    background: var(--paper-2);
+  }
+
+  .nav {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: var(--paper-2);
+    color: var(--muted);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: color .15s, border-color .15s;
+  }
+  .nav:hover:not(:disabled) { color: var(--ink); border-color: var(--accent); }
+  .nav:disabled { opacity: .3; cursor: default; }
+  .nav:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .counter {
+    position: absolute;
+    right: 24px;
+    bottom: 10px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .08em;
+    color: var(--muted);
+  }
+
+  .rail {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 10px 20px 14px;
+    border-top: 1px solid var(--line);
+    background: var(--paper-2);
+    scrollbar-width: thin;
+  }
+
+  .thumb {
+    flex: 0 0 auto;
+    width: 92px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+    opacity: .55;
+    transition: opacity .15s, border-color .15s;
+  }
+  .thumb img { display: block; width: 100%; height: auto; border-radius: 3px; }
+  .thumb:hover { opacity: 1; }
+  .thumb[aria-current="true"] { opacity: 1; border-color: var(--accent); }
+  .thumb:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  @media (max-width: 640px) {
+    .bar { padding: 10px 14px; }
+    .bar h1 { display: none; }
+    .stage { padding: 10px 6px; gap: 4px; }
+    .nav { width: 34px; height: 34px; font-size: 17px; }
+    .thumb { width: 64px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="index.html">&larr; ATS Bias Audit</a>
+    <h1>Deck <span>19 slides</span></h1>
+    <div class="actions">
+      <a href="viewer/deck.pdf" target="_blank" rel="noopener">PDF</a>
+      <a href="presentation.pptx" download>.pptx</a>
+    </div>
+  </header>
+
+  <main class="stage">
+    <button class="nav prev" id="prev" type="button" aria-label="Previous slide">&lsaquo;</button>
+    <figure class="slide">
+      <img id="slide" src="viewer/deck/slide-01.png" alt="Slide 1 of 19" width="1600" height="900">
+    </figure>
+    <button class="nav next" id="next" type="button" aria-label="Next slide">&rsaquo;</button>
+    <p class="counter"><span id="current">1</span> / 19</p>
+  </main>
+
+  <nav class="rail" id="rail" aria-label="Slides"></nav>
+
+<script>
+  (() => {
+    const TOTAL = 19;
+    const img = document.getElementById("slide");
+    const current = document.getElementById("current");
+    const prev = document.getElementById("prev");
+    const next = document.getElementById("next");
+    const rail = document.getElementById("rail");
+    const src = (i) => `viewer/deck/slide-${String(i).padStart(2, "0")}.png`;
+
+    let index = 1;
+
+    for (let i = 1; i <= TOTAL; i++) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "thumb";
+      b.setAttribute("aria-label", `Go to slide ${i}`);
+      b.innerHTML = `<img src="${src(i)}" alt="" loading="lazy" width="1600" height="900">`;
+      b.addEventListener("click", () => show(i));
+      rail.append(b);
+    }
+    const thumbs = [...rail.children];
+
+    function fromHash() {
+      const n = Number(location.hash.replace("#", ""));
+      return Number.isInteger(n) && n >= 1 && n <= TOTAL ? n : 1;
+    }
+
+    function show(n, push = true) {
+      index = Math.min(TOTAL, Math.max(1, n));
+      img.src = src(index);
+      img.alt = `Slide ${index} of ${TOTAL}`;
+      current.textContent = index;
+      prev.disabled = index === 1;
+      next.disabled = index === TOTAL;
+      thumbs.forEach((t, k) => t.setAttribute("aria-current", String(k + 1 === index)));
+      thumbs[index - 1].scrollIntoView({ block: "nearest", inline: "center" });
+      if (push) history.replaceState(null, "", `#${index}`);
+      const pre = new Image();
+      if (index < TOTAL) pre.src = src(index + 1);
+    }
+
+    prev.addEventListener("click", () => show(index - 1));
+    next.addEventListener("click", () => show(index + 1));
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft" || e.key === "PageUp") { e.preventDefault(); show(index - 1); }
+      if (e.key === "ArrowRight" || e.key === "PageDown" || e.key === " ") { e.preventDefault(); show(index + 1); }
+      if (e.key === "Home") { e.preventDefault(); show(1); }
+      if (e.key === "End") { e.preventDefault(); show(TOTAL); }
+    });
+
+    window.addEventListener("hashchange", () => show(fromHash(), false));
+
+    show(fromHash(), false);
+  })();
+</script>
+</body>
+</html>
