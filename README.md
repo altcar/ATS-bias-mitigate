@@ -8,7 +8,7 @@ Live site: **https://altcar.github.io/ATS-bias-mitigate/**
 - **Evidence book (rendered)** — https://altcar.github.io/ATS-bias-mitigate/ats-bias-audit/analysis.html
 - **Deck** — https://altcar.github.io/ATS-bias-mitigate/presentation.pptx (downloads; browsers do not render PowerPoint)
 - **PDF export** — https://altcar.github.io/ATS-bias-mitigate/ats-bias-audit.pdf
-- **Written report (DOCX)** — https://altcar.github.io/ATS-bias-mitigate/A%20lightweight%20API%20that%20route%20AI%20requests.docx
+- **Written report (DOCX)** — https://altcar.github.io/ATS-bias-mitigate/A%C2%A0lightweight%20API%20that%20route%20AI%20requests.docx
 
 The site is published by `.github/workflows/pages.yml` on every push to `main`, using GitHub Pages. Nothing is uploaded to a separate host and there are no extra secrets. The build stages the whole folder and serves `ats-bias-audit/index.html` as the site root.
 
