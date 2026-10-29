@@ -1,0 +1,55 @@
+name: Publish site
+
+# Publishes index.html, analysis.html, the deck and chart assets to GitHub Pages
+# on every push to main. No external host or extra credentials are needed.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a in-flight deploy finish, but keep only one queued run.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Stage static site
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          cp index.html analysis.html presentation.pptx _site/
+          cp -R assets _site/assets
+          # Skip Jekyll processing; the files are already static HTML.
+          touch _site/.nojekyll
+          echo "Staged files:"
+          find _site -type f | sort
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

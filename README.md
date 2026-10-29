@@ -2,6 +2,16 @@
 
 This folder is self-contained: data, scripts, assets, the presentation, a Python virtual environment (`.venv`), and the executed notebook `analysis.ipynb`.
 
+## View it online
+
+Live site: **https://altcar.github.io/ATS-bias-mitigate/**
+
+- `/` — the one-page site (`index.html`).
+- `/analysis.html` — the rendered evidence book.
+- `/presentation.pptx` — the deck (downloads; browsers do not render PowerPoint).
+
+The site is published by `.github/workflows/pages.yml` on every push to `main`, using GitHub Pages. Nothing is uploaded to a separate host and there are no extra secrets.
+
 ## What is here
 
 - `analysis.ipynb` — the main deliverable. Executed end-to-end. It walks from raw CV text → name extraction → 10 structured features → MiniLM states → behavioural gap → activation probe → LEACE → heatmaps and UK ATS analysis.
